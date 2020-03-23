@@ -11,11 +11,6 @@ body {
   margin: 0;
 }
 
-h1 {
-/*   font-style: italic;
-  color: #373fff; */
-}
-
 img.floorplan {
   width: 100%;
 }
@@ -36,30 +31,17 @@ html {
   background-color: blue;
 }
 
+body {
+  min-height: 100%;
+}
+
 body.outside {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2em;
 }
-
-/* body.outside header {
-  position: absolute;
-  top: 75vw;
-  left: 0;
-  width: 100vw;
-  height: calc(100vh - 75vw);
-  min-height: 240px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-} */
-
-/* body.outside header p {
-  margin: 0.25em 0;
-} */
 
 body.outside main {
   position: relative;
@@ -127,7 +109,7 @@ body.inside a.escape-link {
 
 body.inside a.escape-link span.back-label {
   position: absolute;
-  bottom: 1em;
+  bottom: 0.5em;
   left: 0;
   width: 100%;
   text-align: center;
